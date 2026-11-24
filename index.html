@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SEU NOME · Desenvolvedor de Software</title>
-<meta name="description" content="Portfólio de desenvolvimento de software.">
+<title>Kauã Brunheti de Brito · Desenvolvedor de Software</title>
+<link rel="icon" type="image/png" href="icon.png">
+<meta name="description" content="Portfólio de Kauã Brunheti de Brito, estudante de Análise e Desenvolvimento de Sistemas em Araçatuba, SP.">
 <style>
 :root{
   --bg:#0b0b0b; --bg2:#111; --card:#151515; --line:#242424; --txt:#f2f2f2; --mut:#9a9a9a; --dim:#6b6b6b;
@@ -33,7 +34,7 @@ a{color:inherit;text-decoration:none}
 header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
 .logo{display:flex;align-items:center;gap:12px;font-family:var(--mono);letter-spacing:.2em;text-transform:uppercase;font-size:.78rem;line-height:1.2}
-.logo i{width:34px;height:34px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;font-style:normal;font-size:.7rem;background:var(--card)}
+.logo img{width:34px;height:34px;border-radius:50%;border:1px solid var(--line);object-fit:cover;background:var(--card)}
 nav ul{display:flex;gap:32px;list-style:none}
 nav a{font-family:var(--mono);text-transform:uppercase;letter-spacing:.2em;font-size:.72rem;color:var(--mut);padding-bottom:4px;border-bottom:1px solid transparent;transition:.2s}
 nav a:hover{color:var(--txt);border-color:var(--txt)}
@@ -57,7 +58,7 @@ h1{font-family:var(--mono);font-weight:400;text-transform:uppercase;letter-spaci
 .btn{background:var(--btn);color:var(--btn-t);border-radius:10px;padding:16px 26px;transition:.2s}
 .btn:hover{opacity:.85}
 .profile{border:1px solid var(--line);border-radius:24px;padding:40px;background:radial-gradient(circle at 30% 20%,rgba(128,128,128,.12),transparent 60%),var(--card);display:grid;grid-template-columns:auto 1fr;gap:32px}
-.av{width:110px;height:110px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;font-family:var(--mono);font-size:1.7rem;letter-spacing:.1em;background:var(--bg2)}
+.av{width:110px;height:110px;border-radius:50%;border:1px solid var(--line);object-fit:cover;background:var(--bg2);display:block}
 .who{margin-top:18px;color:var(--mut);line-height:1.7}
 .who b{display:block;color:var(--txt);font-weight:500}
 .profile p{color:var(--mut)}
@@ -134,7 +135,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <header>
   <div class="wrap nav">
-    <a href="#inicio" class="logo"><i>SN</i><span>SEU NOME<br>Portfólio</span></a>
+    <a href="#inicio" class="logo"><img src="icon.png" alt="Ícone de Kauã"><span>Kauã Brunheti<br>Portfólio</span></a>
     <nav aria-label="Principal">
       <ul>
         <li><a href="#inicio">Início</a></li>
@@ -158,14 +159,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 <div class="hero" id="inicio">
   <div class="wrap">
     <div>
-      <span class="badge up">Disponível para novos projetos</span>
+      <span class="badge up">Aberto a oportunidades</span>
       <h1>Desenvolvedor<br>de Software</h1>
-      <p class="lead">Construo software limpo, testável e fácil de manter: do banco de dados à interface, com atenção a desempenho, segurança e boas práticas.</p>
+      <p class="lead">Estudante de Análise e Desenvolvimento de Sistemas. Gosto de programar com React e de criar sistemas completos, do banco de dados até a tela.</p>
       <div class="tags">
-        <span class="tag">Back-end</span>
-        <span class="tag">Front-end</span>
-        <span class="tag">APIs</span>
-        <span class="tag">Banco de dados</span>
+        <span class="tag">React</span>
+        <span class="tag">Express</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">SQL</span>
       </div>
       <div class="ctas">
         <a href="#projetos" class="btn up">Ver projetos ↗</a>
@@ -180,15 +181,15 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
     <aside class="profile">
       <div>
-        <div class="av up">SN</div>
-        <p class="who up"><b>SEU NOME</b>Baseado em [CIDADE]</p>
+        <img class="av" src="icon.png" alt="Foto de Kauã Brunheti de Brito">
+        <p class="who up"><b>Kauã Brunheti</b>Araçatuba · SP</p>
       </div>
       <div>
-        <p>[Escreva aqui uma frase sua: o que você gosta de construir e o tipo de problema que gosta de resolver.]</p>
+        <p>Programo com JavaScript e prefiro trabalhar com React. Também faço o back-end com Express e guardo os dados em bancos SQL.</p>
         <div class="facts up">
-          <div><small>Curso</small>[SEU CURSO]</div>
-          <div><small>Instituição</small>[FACULDADE]</div>
-          <div><small>Foco</small>Software</div>
+          <div><small>Curso</small>Análise e Desenv. de Sistemas</div>
+          <div><small>Estágio</small>Técnico de Informática</div>
+          <div><small>Foco</small>Web</div>
         </div>
       </div>
     </aside>
@@ -200,15 +201,15 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   <div class="wrap">
     <div class="sec-h">
       <div><span class="up">Capacidades</span><h2>Como posso ajudar</h2></div>
-      <p>Do levantamento de requisitos à entrega, atuo onde código, arquitetura e qualidade se encontram.</p>
+      <p>Estas são as áreas em que estou aprendendo e praticando.</p>
     </div>
     <div class="grid3">
-      <article class="card"><span class="n up">01</span><h3>Aplicações Web</h3><p>Sistemas web completos, com interfaces responsivas e acessíveis conectadas a uma base sólida.</p></article>
-      <article class="card"><span class="n up">02</span><h3>APIs e Integrações</h3><p>Design e implementação de APIs claras, documentadas e seguras, e integração com serviços externos.</p></article>
-      <article class="card"><span class="n up">03</span><h3>Banco de Dados</h3><p>Modelagem, consultas eficientes e organização de dados para sistemas que crescem sem dor.</p></article>
-      <article class="card"><span class="n up">04</span><h3>Qualidade de Código</h3><p>Testes, revisão de código e padrões que deixam o projeto legível e fácil de evoluir.</p></article>
-      <article class="card"><span class="n up">05</span><h3>Versionamento e Entrega</h3><p>Git, fluxo de branches e rotinas de publicação para entregar com segurança e rastreabilidade.</p></article>
-      <article class="card"><span class="n up">06</span><h3>Automação</h3><p>Scripts e ferramentas que eliminam tarefas repetitivas e economizam tempo da equipe.</p></article>
+      <article class="card"><span class="n up">01</span><h3>Interfaces com React</h3><p>Telas organizadas em componentes, com rotas, login e formulários que conversam com a API.</p></article>
+      <article class="card"><span class="n up">02</span><h3>APIs com Express</h3><p>Rotas para criar, ler, atualizar e apagar dados, com validação e listas paginadas.</p></article>
+      <article class="card"><span class="n up">03</span><h3>Banco de dados</h3><p>Tabelas e relações em MySQL e SQL. Também já usei o Firebase.</p></article>
+      <article class="card"><span class="n up">04</span><h3>Login e permissões</h3><p>Cadastro e login de usuários, senhas criptografadas e áreas só para administradores.</p></article>
+      <article class="card"><span class="n up">05</span><h3>Lógica de programação</h3><p>Base sólida em C e C++, que me ajuda a entender como o código funciona por dentro.</p></article>
+      <article class="card"><span class="n up">06</span><h3>Suporte de informática</h3><p>No estágio, ajudo no dia a dia da escola com computadores, redes e equipamentos.</p></article>
     </div>
   </div>
 </section>
@@ -221,13 +222,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     </div>
     <div class="about">
       <div>
-        <p>[Parágrafo 1: apresente-se. Quem você é, o que estuda e por que escolheu desenvolvimento de software.]</p>
-        <p>[Parágrafo 2: como você trabalha, o que valoriza em um projeto e o que está aprendendo agora.]</p>
+        <p>Meu nome é Kauã, moro em Araçatuba (SP) e estudo Análise e Desenvolvimento de Sistemas. Gosto de criar programas e ver eles funcionando.</p>
+        <p>Prefiro programar com React. Também sei fazer o back-end com Express e usar bancos de dados como MySQL e Firebase. Estou sempre praticando com projetos novos.</p>
       </div>
       <ul class="time">
-        <li><small class="up">[ANO – ANO]</small><b>[Curso]</b><br><span>[Faculdade]</span></li>
-        <li><small class="up">[ANO – ANO]</small><b>[Estágio / experiência]</b><br><span>[Empresa · descreva sem expor dados internos]</span></li>
-        <li><small class="up">[ANO]</small><b>[Certificação ou curso]</b><br><span>[Instituição]</span></li>
+        <li><small class="up">Em andamento</small><b>Análise e Desenvolvimento de Sistemas</b><br><span>Curso superior</span></li>
+        <li><small class="up">Atualmente</small><b>Estágio · Técnico de Informática</b><br><span>Escola Clovis de Arruda</span></li>
       </ul>
     </div>
   </div>
@@ -238,38 +238,38 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   <div class="wrap">
     <div class="sec-h">
       <div><span class="up">Projetos</span><h2>Trabalhos selecionados</h2></div>
-      <p>Cada projeto contado em quatro partes: o problema, a solução, o método e o resultado.</p>
+      <p>Os dois projetos funcionam juntos: uma API e o site que usa ela.</p>
     </div>
 
     <article class="proj">
       <div class="proj-top">
-        <div><span class="up">Projeto 01</span><h3>[Nome do projeto]</h3></div>
-        <span class="up">[Ano]</span>
+        <div><span class="up">Projeto 01</span><h3>API de personagens e habilidades</h3></div>
+        <span class="up">Back-end</span>
       </div>
       <div class="blocks">
-        <div><h4>Problema</h4><p>[Qual era o problema e para quem.]</p></div>
-        <div><h4>O que eu fiz</h4><p>[A solução em uma ou duas frases.]</p></div>
-        <div><h4>Como eu fiz</h4><p>[Tecnologias, método e ferramentas usadas.]</p></div>
-        <div><h4>Resultado</h4><p>[O que você conseguiu. Só números reais.]</p></div>
+        <div><h4>Problema</h4><p>Um sistema precisa guardar dados que se relacionam entre si e controlar quem pode ver e alterar cada coisa.</p></div>
+        <div><h4>O que eu fiz</h4><p>Criei uma API REST com cadastro e login de usuários e rotas para criar, listar, editar e apagar os dados.</p></div>
+        <div><h4>Como eu fiz</h4><p>Node.js, Express e TypeScript. Prisma com MySQL para o banco, JWT para o login, bcrypt para as senhas e Zod para validar os dados.</p></div>
+        <div><h4>Resultado</h4><p>API com 7 recursos completos (caminhos, sequências, autoridades, habilidades, artefatos, personagens e goos), listas paginadas e rotas exclusivas para administradores.</p></div>
       </div>
       <div class="links">
-        <a class="ghost up" href="https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO">Código ↗</a>
+        <a class="ghost up" href="https://github.com/SEU-USUARIO/REPOSITORIO-DA-API">Código ↗</a>
       </div>
     </article>
 
     <article class="proj">
       <div class="proj-top">
-        <div><span class="up">Projeto 02</span><h3>[Nome do projeto]</h3></div>
-        <span class="up">[Ano]</span>
+        <div><span class="up">Projeto 02</span><h3>CRUD em React</h3></div>
+        <span class="up">Front-end</span>
       </div>
       <div class="blocks">
-        <div><h4>Problema</h4><p>[Qual era o problema e para quem.]</p></div>
-        <div><h4>O que eu fiz</h4><p>[A solução em uma ou duas frases.]</p></div>
-        <div><h4>Como eu fiz</h4><p>[Tecnologias, método e ferramentas usadas.]</p></div>
-        <div><h4>Resultado</h4><p>[O que você conseguiu. Só números reais.]</p></div>
+        <div><h4>Problema</h4><p>A API precisava de uma interface para que as pessoas pudessem usar os dados sem mexer no código.</p></div>
+        <div><h4>O que eu fiz</h4><p>Fiz o site em React com login, cadastro e telas para ver, criar, editar e apagar cada tipo de dado. Também tem uma página para montar um grupo de personagens.</p></div>
+        <div><h4>Como eu fiz</h4><p>React, Vite, React Router e CSS. O site se conecta à API por requisições HTTP e guarda o token de login no navegador.</p></div>
+        <div><h4>Resultado</h4><p>Site com várias páginas, rotas protegidas para administradores e telas de CRUD para os dados da API.</p></div>
       </div>
       <div class="links">
-        <a class="ghost up" href="https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO">Código ↗</a>
+        <a class="ghost up" href="https://github.com/SEU-USUARIO/REPOSITORIO-DO-SITE">Código ↗</a>
       </div>
     </article>
   </div>
@@ -280,13 +280,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   <div class="wrap">
     <div class="sec-h">
       <div><span class="up">Stack</span><h2>Ferramentas que uso</h2></div>
-      <p>Mantenha apenas o que você realmente domina ou já usou em algum projeto.</p>
+      <p>Tecnologias que uso nos meus estudos e projetos.</p>
     </div>
     <div class="stack">
-      <div><h3>Linguagens</h3><ul><li>[Linguagem 1]</li><li>[Linguagem 2]</li><li>[Linguagem 3]</li></ul></div>
-      <div><h3>Front-end</h3><ul><li>HTML / CSS</li><li>[Framework]</li></ul></div>
-      <div><h3>Back-end e dados</h3><ul><li>[Framework]</li><li>[Banco de dados]</li><li>[API / REST]</li></ul></div>
-      <div><h3>Ferramentas</h3><ul><li>Git / GitHub</li><li>[Editor / IDE]</li><li>[Outra]</li></ul></div>
+      <div><h3>Linguagens</h3><ul><li>JavaScript</li><li>TypeScript</li><li>SQL</li><li>C</li><li>C++</li></ul></div>
+      <div><h3>Front-end</h3><ul><li>React</li><li>React Router</li><li>HTML / CSS</li></ul></div>
+      <div><h3>Back-end e dados</h3><ul><li>Express</li><li>MySQL</li><li>Firebase</li><li>Prisma</li></ul></div>
+      <div><h3>Ferramentas</h3><ul><li>Visual Studio Code</li><li>Git / GitHub</li></ul></div>
     </div>
   </div>
 </section>
@@ -296,9 +296,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   <div class="wrap">
     <span class="up" style="color:var(--mut)">Contato</span>
     <h2>Vamos construir algo juntos?</h2>
-    <p>Estou aberto a estágios, oportunidades e projetos. Escreva ou me encontre nas redes abaixo.</p>
+    <p>Estou aberto a oportunidades e novos projetos. Escreva ou me encontre nas redes abaixo.</p>
     <div class="ctas">
-      <a href="mailto:seu@email.com" class="btn up">seu@email.com ↗</a>
+      <a href="mailto:kauabrinetti@gmail.com" class="btn up">kauabrinetti@gmail.com ↗</a>
       <a href="https://github.com/SEU-USUARIO" class="ghost up">GitHub</a>
       <a href="https://www.linkedin.com/in/SEU-PERFIL" class="ghost up">LinkedIn</a>
     </div>
@@ -308,7 +308,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <footer>
   <div class="wrap up">
-    <span>© SEU NOME</span>
+    <span>© Kauã Brunheti de Brito</span>
     <span>github.com/SEU-USUARIO</span>
   </div>
 </footer>
